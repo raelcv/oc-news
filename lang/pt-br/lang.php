@@ -108,6 +108,7 @@ return [
         'export' => 'Exportar',
         'unsubscribe' => 'Cancelar inscrição',
         'subscribe' => 'Inscrição',
+        'copy_content_to_newsletter' => 'Copiar conteúdo para conteúdo da newsletter',
         'test' => 'Enviar e-mail de teste',
         'send' => 'Enviar newsletter',
         'send_confirmation' => 'Você deseja enviar a newsletter?',
@@ -115,18 +116,24 @@ return [
         'resend_confirmation' => 'Você deseja reenviar a newsletter?',
         'return' => 'Voltar'
     ],
-    'flash' => [
+    'flash' => [      
         'activate' => 'Postagens ativadas com sucesso.',
         'deactivate' => 'Postagens desativadas com sucesso.',
+        'draft' => 'Successfully modified those posts as draft.',
         'subscribe' => 'Inscrições efetuadas com sucesso.',
-        'unsubscribe' => 'Inscrições canceladas com sucesso.',
+        'unsubscribe' => 'A inscrição desses usuários forak canceladas com sucesso.',
         'delete' => 'Você deseja deletar estes itens?',
         'remove' => 'Itens removidos com sucesso.',
         'newsletter_test_error' => 'Um erro ocorreu ao enviar a newsletter de teste.',
         'newsletter_send_success' => 'Newsletter enviada com sucesso.',
         'newsletter_send_error' => 'Um erro ocorreu ao enviar newsletter. Antes de reenviar verifique o log para obter o status atualizado!',
         'newsletter_resend_success' => 'Newsletter reenviada com sucesso.',
-        'newsletter_resend_error' => 'Um erro ocorreu ao reenviar newsletter. Antes de reenviar verifique o log para obter o status atualizado.'
+        'newsletter_resend_error' => 'Um erro ocorreu ao reenviar newsletter. Antes de reenviar verifique o log para obter o status atualizado.',
+        'subscriber_confirmation_token_invalid' => 'O link de confirmação ou token é inválido.',
+        'subscriber_confirmation_token_expired' => 'Seu link de confirmação expirou, inscreva-se novamente.',
+        'subscriber_confirmation' => 'Você confirmou com sucesso o seu endereço de e-mail. Você receberá os próximos newsletters.',
+        'subscriber_already_confirmed' => 'Sua conta já está confirmada.',
+        'news_clone_confirm' => 'Você quer clonar esta postagem?'
     ],
     'backend_settings' => [
         'description' => 'Configurações de envio de newsletters e estatísticas de visualizações.',
@@ -140,10 +147,16 @@ return [
             'subheading' => 'Isto é ilegal em alguns países!',
             'text' => 'Quando você usa esta funcionalidade você precisa se certificar que isto é permitido em seu país! Tenha certeza que você não está infringindo nenhuma lei.'
         ],
+        'newsletter_double_opt_in' => 'Confirmação de inscrição na newsletter',
+        'newsletter_double_opt_in_comment' => 'Envia um e-mail para o novo inscrito que deve confirmar seu endereço de email',
+        'admin_section' => 'Configurações dos administradores do site',
+        'show_posts' => 'Mostrar a seguinte postagem no front-end como usuário de back-end:',
         'statistic_show_posts' => 'Exibir postagens',
         'statistic_show_mails' => 'Exibir logs de emails',
         'statistic_show_longest_posts' => 'Exibir postagens por tamanho (maiores)',
-        'statistic_show_shortest_posts' => 'Exibir postagens por tamanho (menores)'
+        'statistic_show_shortest_posts' => 'Exibir postagens por tamanho (menores)',
+        'statistic_comment' => 'Na página Estatísticas.',
+        'extra_fields' => 'Campos extras para formulário de notícias'
     ],
     'widget' => [
         'posts' => 'Notícias - Postagens',
@@ -154,9 +167,12 @@ return [
         'show_active' => 'Exibir ativos',
         'show_inactive' => 'Exibir inativos',
         'show_draft' => 'Exibir rascunhos',
+        'show_category' => 'Exibir categoria',
         'show_piece' => 'Número de postagens',
         'show_date' => 'Exibir data',
+        'show_rank' => 'Exibir rank',
         'show_unsub' => 'Exibir descadastrados',
+        'show_pending' => 'Exibir pendente',
         'total' => 'Total'
     ],
     'component' => [
@@ -211,6 +227,8 @@ return [
         'updated_at_desc' => 'Atualizado em (decrescente)',
         'published_at_asc' => 'Publicado em (crescente)',
         'published_at_desc' => 'Publicado em (decrescente)'
+        'statistics_asc' => 'Popularidade (crescente)',
+        'statistics_desc' => 'Popularidade (decrescente)'
     ],
     'sitemap' => [
         'post_list' => 'Lista de postagens',
@@ -218,7 +236,7 @@ return [
     ],
     'messages' => [
         'unsubscribed' => 'Você foi descadastrado com sucesso da nossa newsletter.',
-        'not_subscribed' => 'Você não está inscrito na nossa newsletter.',
+        'not_subscribed' => 'Seu email já foi descadastrado da nossa newsletter.',
         'subscribed' => 'Obrigado pela sua inscrição na nossa newsletter!'
     ]
 ];
