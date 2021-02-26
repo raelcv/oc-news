@@ -218,7 +218,7 @@ return [
     ],
     'messages' => [
         'unsubscribed' => 'Você foi descadastrado com sucesso da nossa newsletter.',
-        'not_subscribed' => 'Você já está inscrito na nossa newsletter.',
+        'not_subscribed' => 'Você não está inscrito na nossa newsletter.',
         'subscribed' => 'Obrigado pela sua inscrição na nossa newsletter!'
     ]
 ];
