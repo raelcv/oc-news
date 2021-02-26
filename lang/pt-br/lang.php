@@ -119,9 +119,9 @@ return [
     'flash' => [      
         'activate' => 'Postagens ativadas com sucesso.',
         'deactivate' => 'Postagens desativadas com sucesso.',
-        'draft' => 'Successfully modified those posts as draft.',
+        'draft' => 'Postagens modificadas como rascunho com sucesso.',
         'subscribe' => 'Inscrições efetuadas com sucesso.',
-        'unsubscribe' => 'A inscrição desses usuários forak canceladas com sucesso.',
+        'unsubscribe' => 'A inscrição dos usuários foram canceladas com sucesso.',
         'delete' => 'Você deseja deletar estes itens?',
         'remove' => 'Itens removidos com sucesso.',
         'newsletter_test_error' => 'Um erro ocorreu ao enviar a newsletter de teste.',
